@@ -10,12 +10,12 @@
 	<title>Minimización</title>
 </head>
 <body>
-	<header class="container-fluid color-2">
+	<header class="container-fluid">
 		<div class="row justify-content-center text-center align-items-center">
 			<div class="col col-lg-2">
 				<img class="img-fluid" src="img/unam_logo.png" alt="UNAM">
 			</div>
-			<div class="col col-md-8 mt-3 d-none d-md-block">
+			<div class="col col-md-8 d-none d-md-block">
 				<h1>Universidad Nacional Autónoma de México</h1>
 				<hr>
 				<h1><span>Facultad de <span class="font-weight-bold">Ingeniería</span></span></h1>
@@ -26,25 +26,27 @@
 		</div>
 	</header>
 	
-	<nav class="container-fluid bg-danger">
-		<ul class="nav nav-tabs">
-			<li class="nav-item">
-				<a class="nav-link active" href="#">Active</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Separated link</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
-			</li>
-		</ul>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Features</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 
 	<main class="container mt-3">
