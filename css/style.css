@@ -9,25 +9,36 @@ header {
 header .facultad {
 	width: 78%;
 }
-header span {
+.rojo {
 	color: #F61D1D;
 }
 nav {
 	padding-top: 1px;
 	font-size: 20px;
+	background-color: #B0ABAB;
 }
-main h2 {
+.main h2 {
 	margin-bottom: 30px;
 }
-main p {
-	font-size: 20px;
+.main p {
+	font-size: 25px;
+}
+.img-unam {
+    /* The image used */
+    background-image: url("../img/unam_noche.jpg");
+
+    /* Set a specific height */
+    height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 footer {
 	height: 100px;
+	background-color: #B0ABAB;
 }
 footer .row {
 	height: 100px;
-}
-footer p {
-	color: white;
 }
