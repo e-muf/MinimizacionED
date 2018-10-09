@@ -14,18 +14,13 @@ header span {
 }
 nav {
 	padding-top: 1px;
-	font-size: 18px;
-}
-main h1 {
-	font-size: 50px;
-	margin-bottom: 30px;
+	font-size: 20px;
 }
 main h2 {
-	font-size: 40px;
 	margin-bottom: 30px;
 }
 main p {
-	font-size: 30px;
+	font-size: 20px;
 }
 footer {
 	height: 100px;
