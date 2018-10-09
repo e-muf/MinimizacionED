@@ -27,3 +27,12 @@ main h2 {
 main p {
 	font-size: 30px;
 }
+footer {
+	height: 100px;
+}
+footer .row {
+	height: 100px;
+}
+footer p {
+	color: white;
+}
