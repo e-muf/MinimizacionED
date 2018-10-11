@@ -24,16 +24,21 @@ nav {
 	font-size: 25px;
 }
 .img-unam {
-    /* The image used */
-    background-image: url("../img/unam_noche.jpg");
+	/* The image used */
+	background-image: url("../img/unam_noche.jpg");
 
-    /* Set a specific height */
-    height: 400px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	/* Set a specific height */
+	height: 400px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media (min-width: 400px) {
+	.biblio .card-header {
+		width: 200px;
+	}
 }
 footer {
 	height: 100px;

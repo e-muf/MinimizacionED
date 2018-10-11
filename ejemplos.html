@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+	<link rel="icon" type="img/png" href="img/fi_icono.png">
 	<title>Minimización</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
 			<div class="col col-md-8 mt-2 d-none d-md-block">
 				<h1 class="font-weight-bold">Universidad Nacional Autónoma de México</h1>
 				<hr>
-				<h1><span class="font-weight-bold">Facultad de Ingeniería</span></h1>
+				<h1><span class="font-weight-bold rojo">Facultad de Ingeniería</span></h1>
 			</div>
 			<div class="col col-lg-2">
 				<img class="facultad" src="img/fi_logo.png" alt="FI">
@@ -38,18 +39,18 @@
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  Teoría
+						Teoría
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="teoria.html">Objetivo</a>
-					  <a class="dropdown-item" href="#">Introducción</a>
-					  <a class="dropdown-item" href="#">Método Algebraico</a>
-					  <a class="dropdown-item" href="#">Mapa de Karnaugh</a>
-					  <a class="dropdown-item" href="#">Método de Quine-McCluskey</a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="video.html">Video</a>
+						<a class="dropdown-item" href="teoria.html">Objetivo</a>
+						<a class="dropdown-item" href="#">Introducción</a>
+						<a class="dropdown-item" href="#">Método Algebraico</a>
+						<a class="dropdown-item" href="#">Mapa de Karnaugh</a>
+						<a class="dropdown-item" href="#">Método de Quine-McCluskey</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="video.html">Video</a>
 					</div>
-				  </li>
+				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Ejemplos  <span class="sr-only">(current)</span></a>
 				</li>
@@ -68,9 +69,9 @@
 
 	<main class="container">
 		<div class="row mt-3">
-            <div class="col">
-                <div id="accordion">
-                    <div class="card">
+			<div class="col">
+				<div id="accordion">
+					<div class="card">
 						<div class="card-header" id="heading1">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
@@ -80,12 +81,37 @@
 						</div>
 						<div id="collapse1" class="collapse" arial-labelledby="heading1" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="img/carousel1.jpg" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="img/carousel1.jpg" alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="img/carousel1.jpg" alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 
-                    <div class="card">
+					<div class="card">
 						<div class="card-header" id="heading2">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
@@ -95,12 +121,37 @@
 						</div>
 						<div id="collapse2" class="collapse" arial-labelledby="heading2" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
-                    
-                    <div class="card">
+					</div>
+
+					<div class="card">
 						<div class="card-header" id="heading3">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
@@ -110,12 +161,37 @@
 						</div>
 						<div id="collapse3" class="collapse" arial-labelledby="heading3" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 
-                    <div class="card">
+					<div class="card">
 						<div class="card-header" id="heading4">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
@@ -125,12 +201,37 @@
 						</div>
 						<div id="collapse4" class="collapse" arial-labelledby="heading4" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 
-                    <div class="card">
+					<div class="card">
 						<div class="card-header" id="heading5">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
@@ -140,12 +241,37 @@
 						</div>
 						<div id="collapse5" class="collapse" arial-labelledby="heading5" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 
-                    <div class="card">
+					<div class="card">
 						<div class="card-header" id="heading6">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
@@ -155,12 +281,37 @@
 						</div>
 						<div id="collapse6" class="collapse" arial-labelledby="heading6" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 
-                    <div class="card">
+					<div class="card">
 						<div class="card-header" id="heading7">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
@@ -170,12 +321,37 @@
 						</div>
 						<div id="collapse7" class="collapse" arial-labelledby="heading7" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 
-                    <div class="card">
+					<div class="card">
 						<div class="card-header" id="heading8">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
@@ -185,12 +361,37 @@
 						</div>
 						<div id="collapse8" class="collapse" arial-labelledby="heading8" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 
-                    <div class="card">
+					<div class="card">
 						<div class="card-header" id="heading9">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
@@ -200,12 +401,37 @@
 						</div>
 						<div id="collapse9" class="collapse" arial-labelledby="heading9" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 
-                    <div class="card">
+					<div class="card">
 						<div class="card-header" id="heading10">
 							<h5 class="mb-0">
 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
@@ -215,18 +441,43 @@
 						</div>
 						<div id="collapse10" class="collapse" arial-labelledby="heading10" data-parent="#accordion">
 							<div class="card-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="..." alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="..." alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
 							</div>
 						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<footer class="container-fluid mt-4">
 		<div class="row align-items-center">
-			<div class="col-4 col-md-3 offset-1">
+			<div class="col-7 col-sm-4 col-md-3 offset-1">
 				<p>&copy Emanuel Flores Martínez, 2018</p>
 			</div>
 			<div class="col-1 offset-1 d-none d-md-block">
@@ -235,9 +486,13 @@
 			<div class="col-1 d-none d-md-block">
 				<img class="img-fluid facultad" src="img/fi_logo.png">
 			</div>
-			<div class="col-6 col-md-4 text-right">
+			<div class="d-none d-sm-block col-sm-5 text-right">
 				<p class="font-weight-bold">Universidad Nacional Autonoma de México</p>
 				<p class="font-weight-bold rojo">Facultad de Ingeniería</p>
+			</div>
+			<div class="d-sm-none col-3 text-right">
+				<p class="font-weight-bold">UNAM</p>
+				<p class="font-weight-bold rojo">FI</p>
 			</div>
 		</div>
 	</footer>
