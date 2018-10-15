@@ -1,3 +1,9 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 body {
 	background-color: #f2f2f2;
 	font-family: 'Quicksand', sans-serif;
@@ -39,6 +45,14 @@ nav {
 	.biblio .card-header {
 		width: 200px;
 	}
+}
+.card {
+	font-family: 'Chakra Petch', sans-serif;
+}
+.card-header {
+	padding-top: 20px; 
+	font-size: 20px;
+	color: #ffffff;
 }
 footer {
 	height: 100px;
