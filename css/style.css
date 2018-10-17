@@ -41,6 +41,21 @@ nav {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.img-video {
+	/* The image used */
+	background-image: url("../img/biblio.jpg");
+
+	/* Set a specific height */
+	height: 200px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+video {
+	width: 75%;
+}
 @media (min-width: 400px) {
 	.biblio .card-header {
 		width: 200px;
@@ -53,6 +68,16 @@ nav {
 	padding-top: 20px; 
 	font-size: 20px;
 	color: #ffffff;
+}
+.card-title {
+	margin-top: 25px;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: underline;
+}
+.card-text {
+	font-size: 20px;
+	margin: 0px;
+	font-family: 'Quicksand', sans-serif;
 }
 @media (max-width: 767px) {
 	.card-body .row div:nth-child(2) {
