@@ -64,6 +64,11 @@ video {
 .card {
 	font-family: 'Chakra Petch', sans-serif;
 }
+.img-pregunta {
+	width: 75%;
+	margin: 10px auto;
+	display: block;
+}
 .card-header {
 	padding-top: 20px; 
 	font-size: 20px;
@@ -83,6 +88,18 @@ video {
 	.card-body .row div:nth-child(2) {
 		margin-top: 16px;
 	}
+}
+.modal {
+	color: white;
+}
+.modal p {
+	font-size: 20px;
+}
+.calificacion {
+	font-size: 25px;
+}
+.modal-title {
+	text-align: center;
 }
 footer {
 	height: 100px;
