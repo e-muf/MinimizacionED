@@ -24,11 +24,12 @@ nav {
 	background-color: #B0ABAB;
 	font-family: 'Quicksand', sans-serif;
 }
-.main h2 {
+main h2 {
 	margin-bottom: 30px;
 }
-.main p {
+main p {
 	font-size: 25px;
+	line-height: 40px;
 }
 .img-unam {
 	/* The image used */
