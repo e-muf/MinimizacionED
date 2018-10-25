@@ -18,6 +18,9 @@ header {
 .rojo {
 	color: #F61D1D;
 }
+.underline {
+	text-decoration: underline;
+}
 nav {
 	padding-top: 1px;
 	font-size: 20px;
@@ -30,6 +33,9 @@ main h2 {
 main p {
 	font-size: 25px;
 	line-height: 40px;
+}
+.min {
+	font-size: 12px;
 }
 .img-unam {
 	/* The image used */
@@ -70,6 +76,7 @@ main p {
 .texto {
 	font-size: 20px;
 	text-align: justify;
+	color: black;
 }
 video {
 	width: 75%;
