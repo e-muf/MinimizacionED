@@ -55,9 +55,6 @@
 					<a class="nav-link" href="ejemplos.html">Ejemplos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="programa.html">Programa</a>
-				</li>
-				<li class="nav-item">
 					<a class="nav-link" href="cuestionario.html">Cuestionario</a>
 				</li>
 				<li class="nav-item">
@@ -215,6 +212,7 @@
 					► Un bloque de 4 cuadrados elimina 2 variables : 4 = 2²<br>
 					</p>
 
+					<h3 class="underline mt-4">Mapa de Karnaugh de 3 variables</h3>
 					<p class="texto">Un mapa de Karnaugh con tres variables es un rectangulo dividido en 2*2*2 = 8 cuadrados, cada uno representante de un minterm de F:B*B*B -> B. El mapa será: </p>
 
 					<!-- Imagenes representacion de 3x3 -->
@@ -234,9 +232,8 @@
 					En el ejemplo,  el bloque de 2 cuadrados ha eliminado 1 variable: la variable y; el bloque de 4 cuadrados ha eliminado 2 variables: la x y la z.
 					<br>
 					Si hubiera sido posible formar un bloque con los 8 cuadrados, se hubieran eliminado (8 = 2*2*2) las tres variables x, y, z, quedando un 1.</p>
-
-					<br><br>
-
+					
+					<h3 class="underline mt-4">Mapa de Karnaugh de 4 variables</h3>
 					<p class="texto">Estudiaremos ahora los mapas de Karnaugh con cuatro variables. Hay que advertir que en el caso de m'as variables su operativa se complica mucho.
 					<br>
 					Con cuatro variables, el rectángulo se divide en 2*2*2*2 = 16 cuadrados, cada uno representante de un minterm de F: B*B*B*B -> B.</p>
@@ -283,13 +280,95 @@
 					<br>
 					<span class="font-weight-bold">5. </span> Todos los cuadrados con el valor 1 deben formar parte de alguno de los grupos.
 					</p>
+
+					<p class="texto">La simplificación de expresiones booleanas empleando mapas de Karnaugh se hace inoperante ciando esas expresiones contienen más de cuatro variables. Por otra parte, no es fácil escribir programas de ordenador basados en las técnicas de Karnaugh.</p>
 				</div>
 			</section>
 			<section class="row" id="quinemc">
 				<div class="col">
 					<h2 class="title">Método de Quine-McCluskey</h2>
 					<hr>
-					<p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni unde praesentium itaque, minus corporis impedit maxime adipisci, nihil id molestias dolore. Fugiat fugit quod officia assumenda facere, itaque sint ut commodi inventore nulla doloremque, eaque molestiae. Dolore, dolores ipsam. Reprehenderit quo expedita ipsa culpa placeat voluptate debitis sapiente, tenetur itaque obcaecati. Id ullam nulla est quos iusto ex! Deserunt, quaerat consequatur dolorem consequuntur suscipit impedit autem, unde eum nobis, assumenda hic obcaecati esse cumque quibusdam earum reprehenderit. Tenetur beatae perspiciatis iure ratione distinctio eos culpa architecto quaerat rem, repellendus ipsam vero repellat, quidem, qui dignissimos odit minus inventore animi dolores.</p>
+					<p class="texto">El método debido a los autores W. Quine y E.J. McCluskey puede aplicarse a cualquier número de variables booleanas y permite su programación.</p>
+
+					<div class="card text-center mt-3">
+						<div class="card-header">
+							<img class="img-fluid" src="img/Quine.jpg" alt="">
+						</div>
+						<div class="card-block px-5">
+							<h4 class="card-text">Willard Van Orman Quine</h4>
+							<p class="card-text">Nació en Akron, Ohio, en 1908.</p>
+							<p class="card-text">Fue alumno del Oberlin College estudiando más tarde en la Universidad de Harvard.</p>
+							<p class="card-text">Se doctoró en el año de 1932, en Filosofía.</p>
+							<p class="card-text">Trabajó en el Departamento de Filosofía de la Universidad de Harvard desde 1936 hasta 1978. Sus investigaciones se orientaron a la lógica y a la filosofía.</p>
+						</div>
+					</div>
+
+					<div class="card text-center mt-3">
+						<div class="card-header">
+							<img width="20%" class="img-fluid" src="img/McCluskey.jpg" alt="">
+						</div>
+						<div class="card-block px-5">
+							<h4 class="card-text">Edward J. McCluskey</h4>
+							<p class="card-text">Nació en el año de 1929.</p>
+							<p class="card-text">Recibió formación en el Bowdoin College y en el M.I.T.</p>
+							<p class="card-text">En 1956 recibe el grado de doctor en Ingeniería Eléctrica.</p>
+							<p class="card-text">Entre los años de 1955 y 1959 trabaja en los laboratorios Bell Telephone para pasar después a enseñar en la Universidad de Princeton hasta 1966.</p>
+							<p class="card-text">En 1967 fue profesor de informática e ingeniería eléctrica en la Universidad de Stanford.</p>
+							<p class="card-text">Fue el director del Centro de Computación en Princeton y del laboratorio de Sistemas Digitales de Stanford.</p>
+						</div>
+					</div>
+
+					<p class="texto">
+							No vamos a presentar aquí las bases teórivas del procedimiento de Quine-McCluskey. En su lugar, haremos uso de varios ejemplos analizándolos en profundidad, tal como lo hacen la mayoría de textos dedicados a la Matemática Discreta, en general, y al Álgebra de Boole, en particular.
+							<br><br>
+							Comenzaremos con un ejempli de función booleana de cuatro variables (*):
+						</p>
+
+						<!-- Agregar funcion 122 Melayo -->
+
+						<p class="texto">Se ha adjudicado un úmero de orden a cada minterm de la expresión disyuntiva de acuerdo con el número de varaibles negadas que posee y en orden creciente de acciones: 1, 2 y 3, para una sola variable negada; 4, 5 y 6, para dos; 7, para tres variables negadas. Y a partir de la función F se construye la tabla adjunta siguiendo las etapas que se indican a continuación.</p>
+
+						<!-- Agregar tabla de etapas 123 Merayo -->
+
+						<ol class="texto">
+							<li>Se agrupan los minterms de la función dada de acuerdo con el número de variables negadas y del número de orden asignado a cada uno de ellos. Se obtiene así tres grupos: el primero, con los minterms 1, 2, 3; el segundo, con los 4, 5, 6; el tercero, con el 7.</li><br>
+							<li>Se representan cada minterm mediante los bits 0, 1 que le correspondan, es decir, mediante su índice binario. Así, por ejemplo, es <em>x y z ¬u = 1 1 1 0, x ¬y z u = 1 0 1 1</em>, etcétera.</li><br>
+							<li>Se combinan entre sí todos aquellos términos, minterms, originales que difieran únicamente en un bit1, obteniéndose así todos los términos posibles con solo tres variables, es decir, con una variables menos que los originales. Será necesario hacer esa combinación con minterms 1 y 2, pueden combinars, (1, 4), por tener diferente el segundo bit. El resultado obtenido por esa combinación será:
+								
+							<!-- Poner la función 123 Merayo -->
+							
+							que es el indicado en la columa correspondiente. Análogamente para las otras combinaciones.
+							</li><br>
+							<li>A cada término literal obtenido, que ahora únicamente posee tres variables, se le asigna su correspondiente índice binario, escribiendo un guión, -, por cada variable que falte. Por ejemplo, al término x z ¬u le corresponderá el índice binario 1-10. Puede observarse que los cinco primeros términos y sus correspondientes índices poseen todos ellos dos variables afirmadas o dos bits 1, mientras que los restantes, solo contienen una variable afirmada o un solo bit 1 en su índice. En resumen, ahora los términos se reúnen en dos grupos.</li><br>
+							<li>Se combinarán entre sí todos aquellos términos de tres variables que difieran únicamente en un bit 1, con lo que se obtendrán términos con solo dos variables. Esa combinación se hará tomando elementos de los dos grupos diferentes. Por ejemplo, los terminos (3, 5), ¬x y u, (6, 7), ¬x ¬y u, pueden combinarse por distinguirse en el segundo bit y pertencen a grupos diferentes, obteniéndose
+
+							<!-- Agregar funcion 124 Merayo -->
+
+							Análogamente para la otra combinación restante.
+							<br>
+							Ya no es posible realizar ninguna combinación atras.
+							</li><br>
+							<li>Para obtener los términos de tres variables, se han combinado todos los elementos de cuatro; oara ibtener los términos con dos variables, se han empleado únicamente los cuatro últimos y no los tres primeros que se habían recuadrado; el elemento ¬x u ua no se ha empleado en combinación alguna y también se ha recuadrado.</li><br>
+							<li>Se constituye ahora una nueva tabla cuyas columnas sean los minterms originales y cuyas filas estén ocupadas por los cuatro elementos sombreados y sobrantes en el apartado anterior. Es una tabla resumen de las combinaciones efectuadas.
+							
+							<!-- Agregar tabla aquí 124 Merayo -->
+
+							</li><br>
+							<li>En principio, la función simplificada estaría formada por esos elementos que no pudieron combinarse: 
+
+							<!-- Agregar función 124 Merayo-->
+
+							Para ver si es posible una simplificación adicional, la tabla anteror la completaremos del siguiente modo: en la primer fila, marcaremos todas aquellas columnas en la sque figure el término x z ¬u, columnas primera y cuarta, lo que equivale a indicar que es término se obtuvo de la simplificación o combinación de los <em>x y z ¬u</em> y <em>x ¬y z ¬u</em>, es decir 1 con 4. En este caso se dice que el candidato a la forma simplificada, <em>x z ¬u</em>, cubre a los dos minterms originales 1 y 4. Idénticos razonamientos para las restantes filas.
+							</li><br>
+							<li>Es necesario incluir, al menos, un producto candidato que cubra cada uno de los minterms originales. Por lo tanto, siempre que exista una marca √ en una cierta columa de la tabla anterior, el producto que corresponda a esa fila tiene que figurar en la simplificación. En el caso que nos ocupa razonariamos así:
+
+							<!-- Agregar todas las filas que faltan 125 Merayo -->
+							
+							Por tanto, las dos formas simplificadas y equivalentes de F, son: 
+
+							<!-- Agregar función simplificada 125 Merayo -->
+							</li>
+						</ol>
 				</div>
 			</section>
 		</main>
