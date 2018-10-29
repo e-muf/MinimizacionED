@@ -204,6 +204,10 @@
 
 					<p class="texto mt-3">La operativa consiste en combinar los minterms pertenecientes a cuadrados adyacentes y de forma que el total de cuadrados combinados sea una potencia de 2. Es decir, pueden hacerse grupos de 2° = 1 cuadrado, 2' = 2 y 2² = 4 cuadrado adyacentes. Y esto con funciones de dos variables. Ejemplo: </p>
 
+					<center>
+						<img class="img-fluid" src="img/ejemplos2x2.jpg" alt="">
+					</center>
+
 					<p class="texto">Obsérvese que: en el primer ejemplo existe un bloque de 2 cuadrados adyacentes y se elimina 1 variable: x(2 = 2'); en el segundo ejemplo existen dos bloquese de un solo cuadrado, y en cada cuadrado no se elimina ninguna variable (1 = 2°); por último, en el tercer ehemplo existen dos bloques, cada uno con 2 variables, eliminándose, en cada uno de ellos, 1 variable: la x y la y (2 = 2).</p>
 
 					<p class="texto">Resumiendo para funciones de dos variables:<br> 
@@ -215,17 +219,23 @@
 					<h3 class="underline mt-4">Mapa de Karnaugh de 3 variables</h3>
 					<p class="texto">Un mapa de Karnaugh con tres variables es un rectangulo dividido en 2*2*2 = 8 cuadrados, cada uno representante de un minterm de F:B*B*B -> B. El mapa será: </p>
 
-					<!-- Imagenes representacion de 3x3 -->
+					<center>
+						<img class="img-fluid" src="img/mapa3x3.jpg" alt="">
+					</center>
 
 					<p class="texto">En este caso, el mapa de Karnaugh puede considerarse como un cilindro cerrado, sobre el que los cuadrados de indices 7 y 3 son adyacentes, así como también los de índices 6 y 2.
 					<br><br>
 					○ Por ejemplo, dada la función: </p>
 
-					<!-- F(x, y, z) = x¬yz + x¬y¬z + ¬x¬yz + ¬x¬y¬z--> 
+					<center>
+						<img class="img-fluid" src="img/f3x3.jpg" alt="">
+					</center>
 
 					<p class="texto">, su mapa de Karnaugh sería: </p>
 
-					<!-- Ejemplo mapa de Karnaugh 3x3 -->
+					<center>
+						<img class="img-fluid" src="img/ejemplo13x3.jpg" alt="">
+					</center>
 					
 					<p class="texto mt-3">Se han formado dos bloques: el primero con 4 cuadrados, 2², y el segundo con solo 2 cuadrados, 2'. En el primer bloque, la única variable que permanece inalterada es ¬y, en el segundo, son las variables ¬x y z que no cambian.
 					<br>
@@ -267,7 +277,7 @@
 						</div>
 					</div>
 
-					<p class="texto mt-3">Los mapas de Karnnaugh se han completado siempre escribiendo 1 en los cuadrados representativos de los minterms. Evidentemente se podría haber hecho lo mismo considerando maxterms y por consiguiente partiendo de expresiones canónicas conjuntivas.
+					<p class="texto mt-3">Los mapas de Karnaugh se han completado siempre escribiendo 1 en los cuadrados representativos de los minterms. Evidentemente se podría haber hecho lo mismo considerando maxterms y por consiguiente partiendo de expresiones canónicas conjuntivas.
 					<br><br>
 					Los pasos para simplificar una función booleana, empleando mapas de Karnaugh, son los siguientes:<br>
 					<span class="font-weight-bold">1. </span> Utilizar minterms o maxterms.
