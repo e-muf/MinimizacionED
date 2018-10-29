@@ -69,7 +69,7 @@
 
 	<div class="img-video"></div>
 
-	<main class="container">
+	<main class="container bg-light mt-3">
 		<section class="row">
 			<div class="col">
 				<h2 class="title">Objetivo</h2>
@@ -129,19 +129,25 @@
 
 					<p class="texto">Recibe el nombre de forma canónica disyuntiva de una función booleana, una forma disyuntiva constituida por minterms en los que aparecen todas las variables lógicas de la función. Se conoce como término canónico de una función lógica a todo producto o suma en la cual aparecen todas las variables en su forma directa o inversa. Una función lógica que está compuesta por operador lógico puede ser expresada en forma canónica usando los conceptos de minterm y maxterm. Todas las funciones lógicas son expresables en forma canónica, tanto como una "suma de minterms" como "producto de maxterms". Esto permite un mejor análisis para la simplificación de dichas funciones, lo que es de gran importancia para la minimización de circuitos digitales. </p>
 					
-					<!-- Aquí va la tabla -->
+					<center>
+						<img class="img-fluid" src="img/tabla1.jpg" alt="">
+					</center>
 
-					<p class="texto">Pasando esta función a su forma canónca de productos: </p>
+					<p class="texto mt-3">Pasando esta función a su forma canónca de productos: </p>
 
-					<!-- Aquí va la forma canónica -->
+					<center>
+						<img class="img-fluid" src="img/canonica1.jpg" alt="">
+					</center>
 
 					<p class="texto mt-3">Claramente, la equivalencia de expresiones booleanas es una relación de equivalencia en el conjunto de todas las expresiones booleanas en n variables. Cada clase de equivalencia está asociada con una función de verdad distinta. Como una función de verdad, el algoritmo de suma de productos produce un miembro particular de la clase asociada con esa función, a saber, la forma canónica de suma de productos. Sin embargo, si estamos tratando de diseñar la red lógica para esa función, queremos encontrar un miembro de la clase que sea lo más simple posible. ¿Cómo podemos reducir una expresión booleana a una expresión simple y equivalente? Podemos usar las propiedades de un álgebra booleana porque expresan la equivalencia de expresiones booleanas. Si P es una expresión booleana que contiene la subexpresión x<span class="min">1</span> + (x<span class="min">2</span>x<span class="min">3</span>), por ejemplo, y Q es la expresión obtenida de P al reemplazar x<span class="min">1</span> + (x<span class="min">2</span>x<span class="min">3</span>) con la expresión equivalente (x<span class="min">1</span> + x<span class="min">2</span>) (x<span class="min">1</span> + x<span class="min">3</span>), la P y Q son equivalentes.</p>
 					
 					<p class="texto">Usando las propiedades de álgebra booleana, podemos reducir: </p>
 					
-					<!-- Reduccion -->
+					<center>
+						<img src="img/reduccion1.jpg" alt="">
+					</center>
 
-					<p class="texto">Para seguir el problema paso a paso, consulta la sección de ejemplos.</p>
+					<p class="texto mt-3">Para seguir el problema paso a paso, consulta la sección de ejemplos.</p>
 				</div>
 			</section>
 			<section class="row" id="karnaugh">
@@ -169,7 +175,114 @@
 
 					<p class="texto">Los mapas o diagramas de Karnaugh facilitan un método visual para simplificar expresiones formadas por suma de productos. Sin embargo, el método no es conveniente para su ejecución por un computador.</p>
 
-					<p class="texto">Comenzaremos con funciones F de grado dos F: B*B -> B, que contienen dos variables x e y. Para dos variables</p>
+					<p class="texto">Comenzaremos con funciones F de grado dos F: B² -> B, que contienen dos variables x e y. Para dos variables, un mapa de Karnaugh está compuesto por 2² = 4 cuadrados. Cada cuadrado erepresnta un mintermn de la función booleana. En este caso, el mapa es: </p>
+
+					<center>
+						<img class="img-fluid" src="img/mapa2x2.jpg" alt="">
+					</center>
+
+					<p class="texto mt-3">Por ejemplo, el priemer cuadrado superior izquierdo, representa el minterm xy, que, caso de figurar en la expresión booleana de la función, contendrá un 1. El siguiente cuadrado representa el minterm ¬xy, y así sucesivamente. En el mapa se dan también los índices binarios y decimales del minterm.</p>
+
+					<div class="card mt-3">
+						<div class="card-header">
+							<p class="font-weight-bold texto">Definición</p>
+							<p class="texto">Dos cuadrados de un papa de Karnaugh son adyacentes si los minterms que representan difieren únicamente en un literal.</p>
+						</div>
+					</div>
+
+					<p class="texto mt-3">Así, en el primer para del ejemplo anterior, los cuadrado de índices respectivos 3 y 1 que contienen xy y ¬xy, son adyacentes puesto que solo difieren en la variable x, ¬x. </p>
+
+					<div class="card mt-3">
+						<div class="card-header">
+							<p class="font-weight-bold texto">Regla</p>
+							<p class="texto">Siempre que en un mapa de Karnaugh, dos cuadrados adyacentes contengan el valor 1, los minterms representados por esos cuadrados pueden combinarse en un producto que contendrá únicamente las variables o literal común a los dos minterms.</p>
+						</div>
+					</div>
+		
+					<p class="texto mt-3">Por ejemplo, los minterms x¬y y ¬(xy) ocuparán dos cuadrados adyacentes, los 2 y 0, y será:</p>
+
+					<center>
+						<img class="img-fluid" src="img/emp1.jpg" alt="">
+					</center>
+
+					<p class="texto mt-3">La operativa consiste en combinar los minterms pertenecientes a cuadrados adyacentes y de forma que el total de cuadrados combinados sea una potencia de 2. Es decir, pueden hacerse grupos de 2° = 1 cuadrado, 2' = 2 y 2² = 4 cuadrado adyacentes. Y esto con funciones de dos variables. Ejemplo: </p>
+
+					<p class="texto">Obsérvese que: en el primer ejemplo existe un bloque de 2 cuadrados adyacentes y se elimina 1 variable: x(2 = 2'); en el segundo ejemplo existen dos bloquese de un solo cuadrado, y en cada cuadrado no se elimina ninguna variable (1 = 2°); por último, en el tercer ehemplo existen dos bloques, cada uno con 2 variables, eliminándose, en cada uno de ellos, 1 variable: la x y la y (2 = 2).</p>
+
+					<p class="texto">Resumiendo para funciones de dos variables:<br> 
+					► Un bloque de 1 cuadrado elimina 0 variables : 1 = 2°<br>
+					► Un bloque de 2 cuadrados elimina 1 variable : 2 = 2'<br>
+					► Un bloque de 4 cuadrados elimina 2 variables : 4 = 2²<br>
+					</p>
+
+					<p class="texto">Un mapa de Karnaugh con tres variables es un rectangulo dividido en 2*2*2 = 8 cuadrados, cada uno representante de un minterm de F:B*B*B -> B. El mapa será: </p>
+
+					<!-- Imagenes representacion de 3x3 -->
+
+					<p class="texto">En este caso, el mapa de Karnaugh puede considerarse como un cilindro cerrado, sobre el que los cuadrados de indices 7 y 3 son adyacentes, así como también los de índices 6 y 2.
+					<br><br>
+					○ Por ejemplo, dada la función: </p>
+
+					<!-- F(x, y, z) = x¬yz + x¬y¬z + ¬x¬yz + ¬x¬y¬z--> 
+
+					<p class="texto">, su mapa de Karnaugh sería: </p>
+
+					<!-- Ejemplo mapa de Karnaugh 3x3 -->
+					
+					<p class="texto mt-3">Se han formado dos bloques: el primero con 4 cuadrados, 2², y el segundo con solo 2 cuadrados, 2'. En el primer bloque, la única variable que permanece inalterada es ¬y, en el segundo, son las variables ¬x y z que no cambian.
+					<br>
+					En el ejemplo,  el bloque de 2 cuadrados ha eliminado 1 variable: la variable y; el bloque de 4 cuadrados ha eliminado 2 variables: la x y la z.
+					<br>
+					Si hubiera sido posible formar un bloque con los 8 cuadrados, se hubieran eliminado (8 = 2*2*2) las tres variables x, y, z, quedando un 1.</p>
+
+					<br><br>
+
+					<p class="texto">Estudiaremos ahora los mapas de Karnaugh con cuatro variables. Hay que advertir que en el caso de m'as variables su operativa se complica mucho.
+					<br>
+					Con cuatro variables, el rectángulo se divide en 2*2*2*2 = 16 cuadrados, cada uno representante de un minterm de F: B*B*B*B -> B.</p>
+
+					<!-- Representacion 4x4 -->
+
+					<p class="texto mt-3">El mapa de Karnaugh puede considerar en este caso como un cilindro cerrado por sus dos dimensiones, de forma que los cuadrados 15, 14, 12 y 13 son adyacentes respectivamente con los 7, 6, 4 y 5; también los 15, 11, 3 y 7 son adyacentes con los 13, 9, 1 y 5.</p>
+
+					<p class="texto">Como consecuencia de lo anterior, los cuadrados 15, 7, 13 y 5, situados en los cuatro vértices, son adyacentes entre sí, es decir, se podría formar un bloque con esos cuatro cuadrados.</p>
+
+					<p class="texto">Como en este caso podríamos llegar a formar bloques de 8 = 2*2*2 cuadrados, esos significaría que podríamos eliminar, en esta situación, hasta 3 variables de la expresión primitiva.</p>
+					
+					<p class="texto">○ Dada la función F: B*B*B*B -> B.</p>
+
+					<p class="texto">para simplificarla, lo primero sería completar los minterms que les falta alguna variable, hasta que la expansión sea canónica. Esto es equivalente a tomar cada minterm incompleto y colocarlo en todos aquellos cuadrados que tengan las variables que figuran en dicho minterm. Por ejemplo, x¬y¬z deberá figurar en los cuadrados 8 y 9; el ¬x¬y¬z, en los 0 y 1, etc.
+					Con estas consideraciones tendríamos el siguiente mapa:
+					</p>
+
+					<!-- Imagen mapa 115 merayo -->
+
+					<p class="texto">Como puede observarse, se ha formado el mínimo número de bloques, cada uno con el máximo de cuadrado y siempre reunidos en potencias de dos.
+					<br>
+					En el bloque más grande de 8 cuadrados el minterm que resulta es el ¬y, puesto que es la única variable que se repite en los cuadrados; en el bloque superior de 2 cuadrados solo permance el minterm ¬xz¬u; en el inferior, también de 2 cuadrados, solo quedará x¬zu. Por tanto, la expresión equivalente a la dada pero simplificada, será: </p>
+
+					<!-- Funcion 116 Merayo -->
+
+					<div class="card mt-3">
+						<div class="card-header">
+							<p class="font-weight-bold texto">Regla</p>
+							<p class="texto">Construido un mapa de Karnaugh y completado con los minterms correspondientes, la variable que se elimina en un bloque de cuadrados adyacentes es la que cambia de estado dentro de los mismos, permaneciendo aquellas otras variables que no cambian su estado.</p>
+						</div>
+					</div>
+
+					<p class="texto mt-3">Los mapas de Karnnaugh se han completado siempre escribiendo 1 en los cuadrados representativos de los minterms. Evidentemente se podría haber hecho lo mismo considerando maxterms y por consiguiente partiendo de expresiones canónicas conjuntivas.
+					<br><br>
+					Los pasos para simplificar una función booleana, empleando mapas de Karnaugh, son los siguientes:<br>
+					<span class="font-weight-bold">1. </span> Utilizar minterms o maxterms.
+					<br>
+					<span class="font-weight-bold">2. </span> Considerar grupos de 2ⁿ cuadrados adyacentes, n = 0, 1, 2, ... En cada grupo de cuadrados desparecerán n variables.
+					<br>
+					<span class="font-weight-bold">3. </span> Un cuadrado puede formar parte de distintos grupos.
+					<br>
+					<span class="font-weight-bold">4. </span> Tomar el menor número de grupos con el máximo de cuadrados.
+					<br>
+					<span class="font-weight-bold">5. </span> Todos los cuadrados con el valor 1 deben formar parte de alguno de los grupos.
+					</p>
 				</div>
 			</section>
 			<section class="row" id="quinemc">
