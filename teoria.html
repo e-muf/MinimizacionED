@@ -248,7 +248,9 @@
 					<br>
 					Con cuatro variables, el rectángulo se divide en 2*2*2*2 = 16 cuadrados, cada uno representante de un minterm de F: B*B*B*B -> B.</p>
 
-					<!-- Representacion 4x4 -->
+					<center>
+						<img width="75%" class="img-fluid" src="img/mapa4x4.jpg" alt="">
+					</center>
 
 					<p class="texto mt-3">El mapa de Karnaugh puede considerar en este caso como un cilindro cerrado por sus dos dimensiones, de forma que los cuadrados 15, 14, 12 y 13 son adyacentes respectivamente con los 7, 6, 4 y 5; también los 15, 11, 3 y 7 son adyacentes con los 13, 9, 1 y 5.</p>
 
@@ -262,13 +264,17 @@
 					Con estas consideraciones tendríamos el siguiente mapa:
 					</p>
 
-					<!-- Imagen mapa 115 merayo -->
+					<center>
+						<img width="75%" class="img-fluid" src="img/ejemplo4x4.jpg" alt="">
+					</center>
 
 					<p class="texto">Como puede observarse, se ha formado el mínimo número de bloques, cada uno con el máximo de cuadrado y siempre reunidos en potencias de dos.
 					<br>
 					En el bloque más grande de 8 cuadrados el minterm que resulta es el ¬y, puesto que es la única variable que se repite en los cuadrados; en el bloque superior de 2 cuadrados solo permance el minterm ¬xz¬u; en el inferior, también de 2 cuadrados, solo quedará x¬zu. Por tanto, la expresión equivalente a la dada pero simplificada, será: </p>
 
-					<!-- Funcion 116 Merayo -->
+					<center>
+						<img class="img-fluid" src="img/efuncion4x4.jpg" alt="">
+					</center>
 
 					<div class="card mt-3">
 						<div class="card-header">
@@ -334,7 +340,9 @@
 							Comenzaremos con un ejempli de función booleana de cuatro variables (*):
 						</p>
 
-						<!-- Agregar funcion 122 Melayo -->
+						<center>
+							<img class="img-fluid" src="img/funcion4x4.jpg" alt="">
+						</center>
 
 						<p class="texto">Se ha adjudicado un úmero de orden a cada minterm de la expresión disyuntiva de acuerdo con el número de varaibles negadas que posee y en orden creciente de acciones: 1, 2 y 3, para una sola variable negada; 4, 5 y 6, para dos; 7, para tres variables negadas. Y a partir de la función F se construye la tabla adjunta siguiendo las etapas que se indican a continuación.</p>
 
@@ -345,14 +353,18 @@
 							<li>Se representan cada minterm mediante los bits 0, 1 que le correspondan, es decir, mediante su índice binario. Así, por ejemplo, es <em>x y z ¬u = 1 1 1 0, x ¬y z u = 1 0 1 1</em>, etcétera.</li><br>
 							<li>Se combinan entre sí todos aquellos términos, minterms, originales que difieran únicamente en un bit1, obteniéndose así todos los términos posibles con solo tres variables, es decir, con una variables menos que los originales. Será necesario hacer esa combinación con minterms 1 y 2, pueden combinars, (1, 4), por tener diferente el segundo bit. El resultado obtenido por esa combinación será:
 								
-							<!-- Poner la función 123 Merayo -->
+							<center>
+								<img class="img-fluid" src="img/funcion1quine.jpg" alt="">
+							</center>
 							
 							que es el indicado en la columa correspondiente. Análogamente para las otras combinaciones.
 							</li><br>
 							<li>A cada término literal obtenido, que ahora únicamente posee tres variables, se le asigna su correspondiente índice binario, escribiendo un guión, -, por cada variable que falte. Por ejemplo, al término x z ¬u le corresponderá el índice binario 1-10. Puede observarse que los cinco primeros términos y sus correspondientes índices poseen todos ellos dos variables afirmadas o dos bits 1, mientras que los restantes, solo contienen una variable afirmada o un solo bit 1 en su índice. En resumen, ahora los términos se reúnen en dos grupos.</li><br>
 							<li>Se combinarán entre sí todos aquellos términos de tres variables que difieran únicamente en un bit 1, con lo que se obtendrán términos con solo dos variables. Esa combinación se hará tomando elementos de los dos grupos diferentes. Por ejemplo, los terminos (3, 5), ¬x y u, (6, 7), ¬x ¬y u, pueden combinarse por distinguirse en el segundo bit y pertencen a grupos diferentes, obteniéndose
 
-							<!-- Agregar funcion 124 Merayo -->
+							<center>
+								<img class="img-fluid" src="img/f2quine.jpg" alt="">
+							</center>
 
 							Análogamente para la otra combinación restante.
 							<br>
@@ -366,17 +378,23 @@
 							</li><br>
 							<li>En principio, la función simplificada estaría formada por esos elementos que no pudieron combinarse: 
 
-							<!-- Agregar función 124 Merayo-->
+							<center>
+								<img class="img-fluid" src="img/f3quine.jpg" alt="">
+							</center>
 
 							Para ver si es posible una simplificación adicional, la tabla anteror la completaremos del siguiente modo: en la primer fila, marcaremos todas aquellas columnas en la sque figure el término x z ¬u, columnas primera y cuarta, lo que equivale a indicar que es término se obtuvo de la simplificación o combinación de los <em>x y z ¬u</em> y <em>x ¬y z ¬u</em>, es decir 1 con 4. En este caso se dice que el candidato a la forma simplificada, <em>x z ¬u</em>, cubre a los dos minterms originales 1 y 4. Idénticos razonamientos para las restantes filas.
 							</li><br>
 							<li>Es necesario incluir, al menos, un producto candidato que cubra cada uno de los minterms originales. Por lo tanto, siempre que exista una marca √ en una cierta columa de la tabla anterior, el producto que corresponda a esa fila tiene que figurar en la simplificación. En el caso que nos ocupa razonariamos así:
 
-							<!-- Agregar todas las filas que faltan 125 Merayo -->
+							<center>
+								<img width="50%" class="img-fluid mt-3 mb-3" src="img/linesquine.jpg" alt="">
+							</center>
 							
 							Por tanto, las dos formas simplificadas y equivalentes de F, son: 
 
-							<!-- Agregar función simplificada 125 Merayo -->
+							<center>
+								<img class="img-fluid" src="img/f4quine.jpg" alt="">
+							</center>
 							</li>
 						</ol>
 				</div>
