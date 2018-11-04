@@ -7,10 +7,10 @@
 	}
 	document.addEventListener('DOMContentLoaded', function(){
 
-		function aleatorio(cantidad) {
+		function aleatorio(cantidad, rango) {
 			var m_aleatorio = []
 			for(let i = 0; i < cantidad; i++) {
-				var n = Math.floor(Math.random() * cantidad)
+				var n = Math.floor(Math.random() * rango)
 				if(!m_aleatorio.includes(n))
 					m_aleatorio.push(n);
 				else
@@ -33,7 +33,7 @@
 			}
 
 			getRespuestasAleatorias() {
-				let r_aleatoria = aleatorio(4);
+				let r_aleatoria = aleatorio(4, 4);
 				var normal = [this.r_correcta, this.r_uno, this.r_dos, this.r_tres];
 				var respuestas = []
 				for(let i = 0; i < r_aleatoria.length; i++){
@@ -47,7 +47,7 @@
 		class Cuestionario {
 			constructor(questions = []) {
 				this.preguntas = [];
-				var q_aleatorias = aleatorio(10, 10);
+				var q_aleatorias = aleatorio(10, 15);
 				for(let i = 0; i < q_aleatorias.length; i++) {
 					this.preguntas.push(questions[q_aleatorias[i]]);
 				}
@@ -65,6 +65,11 @@
 		const pregunta8 = new Pregunta('¿Cuando dos expresiones booleanas son equivalentes?', 'Si tiene las mismas funciones de verdad', 'Si son exactamente iguales', 'Si son parecidas en al menos un término', 'Si son parecidas en todos los terminos.');
 		const pregunta9 = new Pregunta('¿Qué pasa cuando en un mapa de Karnaugh dos cuadrados adyacentes contienen un 1?', 'Se pueden combinar en un producto que contendrá únicamente las variables o literal común', 'Se separan las variables que los contienen', 'Se juntan las variables con valor diferente', 'Se juntan las variables las cuales son iguales');
 		const pregunta10 = new Pregunta('Un bloque de 4 cuadrados elimina: ', '0 variables', '1 variable', '2 variables', '4 variables');
+		const pregunta11 = new Pregunta('¿Cuál corresponde a la ley de Dominación?', 'p ^ (F) <=> (F)<br>p v (T) <=> (T)', 'p v (F) <=> (F)<br>p ^ (T) <=> (T)', 'p ^ (F) <=> (T)<br>p v (T) <=> (F)', 'p v (T) <=> (F)<br>p ^ (F) <=> (T)');
+		const pregunta12 = new Pregunta('¿Una función minimizada es equivalente a la función sin minimizar?', 'Sí, porque tienen la misma tabla de verdad', 'No, porque no estan escritas igual', 'No, porque deben tener los mismos operadores.', 'Ninguna respuesta es correcta');
+		const pregunta13 = new Pregunta('El método que permite n variables y se puede programar es: ', 'Método de Quine-McCluskey', 'Mapa Karnaugh', 'Método Algebraico', 'E.W. Veitch');
+		const pregunta14 = new Pregunta('Si tenemos la siguiente función: xy<br>¿Cuál es el valor de las variables?', '11', '01', '10', '00');
+		const pregunta15 = new Pregunta('¿Cuál es forma canónica de productos de la siguiente tabla?<br><img class="img-pregunta" src="img/tabla1.jpg">', '<img class="img-fluid" src="img/canonica1.jpg">', '01', '10', '00');
 
 		var t_preguntas = [
 		pregunta1,
@@ -76,7 +81,12 @@
 		pregunta7,
 		pregunta8,
 		pregunta9,
-		pregunta10
+		pregunta10,
+		pregunta11,
+		pregunta12,
+		pregunta13,
+		pregunta14,
+		pregunta15
 		];
 
 		var cuestionario = new Cuestionario(t_preguntas);
