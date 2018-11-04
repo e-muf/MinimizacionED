@@ -69,7 +69,7 @@
 		const pregunta12 = new Pregunta('¿Una función minimizada es equivalente a la función sin minimizar?', 'Sí, porque tienen la misma tabla de verdad', 'No, porque no estan escritas igual', 'No, porque deben tener los mismos operadores.', 'Ninguna respuesta es correcta');
 		const pregunta13 = new Pregunta('El método que permite n variables y se puede programar es: ', 'Método de Quine-McCluskey', 'Mapa Karnaugh', 'Método Algebraico', 'E.W. Veitch');
 		const pregunta14 = new Pregunta('Si tenemos la siguiente función: xy<br>¿Cuál es el valor de las variables?', '11', '01', '10', '00');
-		const pregunta15 = new Pregunta('¿Cuál es forma canónica de productos de la siguiente tabla?<br><img class="img-pregunta" src="img/tabla1.jpg">', '<img class="img-fluid" src="img/canonica1.jpg">', '01', '10', '00');
+		const pregunta15 = new Pregunta('¿Cuál es forma canónica de productos de la siguiente tabla?<br><img class="img-pregunta" src="img/tabla1.jpg">', '<img class="img-fluid" src="img/canonica1.jpg">', '<img class="img-fluid" src="img/canonica1-2.jpg">', '<img class="img-fluid" src="img/canonica1-3.jpg">', '<img class="img-fluid" src="img/canonica1-4.jpg">');
 
 		var t_preguntas = [
 		pregunta1,

@@ -78,6 +78,9 @@ main p {
 	text-align: justify;
 	color: black;
 }
+.carousel-inner img {
+	width: 75%;
+}
 video {
 	width: 75%;
 }
