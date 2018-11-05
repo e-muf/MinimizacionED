@@ -71,7 +71,7 @@
 			<div class="col">
 				<h2 class="title">Objetivo</h2>
 				<hr>
-				<p class="texto">&nbsp&nbspProporcionar al lector una serie de herramientas para que pueda aprender de manera sencilla los métodos de minimización de un expresión booleana. Se espera que el alumno pueda manejar estos métodos de manera eficiente, identifique las diferencias entre cada uno y los aplique en los problemas que se le puedan presentar a futuro. El lector se encontrará con las siguientes herramientas:<br>
+				<p class="texto">&nbsp&nbspProporcionar al lector una serie de herramientas para que pueda aprender de manera sencilla los métodos de minimización de una expresión booleana. Se espera que el alumno pueda manejar estos métodos de manera eficiente, identifique las diferencias entre cada uno y los aplique en los problemas que se le puedan presentar a futuro. El lector se encontrará con las siguientes herramientas:<br>
 					<br><span class="font-weight-bold">-> Teoría:</span> Aquí podra aprender los fundamentos teóricos de los métodos de minimización.
 					<br><span class="font-weight-bold">-> Video:</span> Video tutorial de un ejemplo sencillo de un método de minimización.
 					<br><span class="font-weight-bold">-> Ejemplos:</span> Se realizan 10 ejemplos de los diferentes métodos, cada uno está explicado de manera explícita, por lo que al lector se le hará muy sencillo seguir cada uno de estos.
@@ -96,7 +96,7 @@
 				<div class="col">
 					<h2 class="title">Método Algebraico</h2>
 					<hr>
-					<p class="texto">&nbsp&nbspHasta el momento se ha tratado el álgebra de Boole de forma generalizada. Es decir, se ha considerado un conjunto B con un número indefinido de elementos. En lo que sigue se restingirá el caso binario, caso en que el conjunto B está compuesto por los elementos {0,1}. Evidentemente, el contar con sólo dos posibles elementos permite trabajar con locuciones del tipo "verdadero" o "falso", o bien "abierto" o "cerrado", expresiones con connotación real que reflejan los actos físicos que se realizan.</p>
+					<p class="texto">&nbsp&nbspHasta el momento se ha tratado el álgebra de Boole de forma generalizada. Es decir, se ha considerado un conjunto B con un número indefinido de elementos. En lo que sigue se restringirá el caso binario, caso en que el conjunto B está compuesto por los elementos {0,1}. Evidentemente, el contar con sólo dos posibles elementos permite trabajar con locuciones del tipo "verdadero" o "falso", o bien "abierto" o "cerrado", expresiones con connotación real que reflejan los actos físicos que se realizan.</p>
 					
 					<p class="texto">&nbsp&nbspEl conjunto de operaciones a realizar con las variables booleanas está determinado por un conjunto de operadores que simulan el comportamiento de las operaciones matemáticas +(suma), *(producto), -(negación), y que reflejan el comportamiento de circuitos reales.</p>
 
@@ -121,7 +121,7 @@
 					<h3 class="underline mt-4">Forma canónica de suma de productos</h3>
 					<p class="texto">Se denomina expresión en forma disyuntiva o expansión en suma de productos, toda expresión formada por una suma de términos, cada uno de ellos compuesto por un producto de variables binarias, complementadas o no. En dicha expresión, no tienen por qué aparecer todas las variables de la función booleana.</p>
 
-					<p class="texto"> Se denomina expresión en forma conjuntiva o expansión en producto de sumas, todas expresión formada por un producto de términos, cacda uno de ellos compuesto por una suma de variables binarias, complementadas o no. En dicha expresión, no tienen por qué aparecer todas las variables de la función booleana.</p>
+					<p class="texto"> Se denomina expresión en forma conjuntiva o expansión en producto de sumas, toda expresión formada por un producto de términos, cada uno de ellos compuesto por una suma de variables binarias, complementadas o no. En dicha expresión, no tienen por qué aparecer todas las variables de la función booleana.</p>
 
 					<p class="texto">Recibe el nombre de forma canónica disyuntiva de una función booleana, una forma disyuntiva constituida por minterms en los que aparecen todas las variables lógicas de la función. Se conoce como término canónico de una función lógica a todo producto o suma en la cual aparecen todas las variables en su forma directa o inversa. Una función lógica que está compuesta por operador lógico puede ser expresada en forma canónica usando los conceptos de minterm y maxterm. Todas las funciones lógicas son expresables en forma canónica, tanto como una "suma de minterms" como "producto de maxterms". Esto permite un mejor análisis para la simplificación de dichas funciones, lo que es de gran importancia para la minimización de circuitos digitales. </p>
 					
@@ -186,12 +186,12 @@
 						</div>
 					</div>
 
-					<p class="texto mt-3">Así, en el primer para del ejemplo anterior, los cuadrado de índices respectivos 3 y 1 que contienen xy y ¬xy, son adyacentes puesto que solo difieren en la variable x, ¬x. </p>
+					<p class="texto mt-3">Así, en el primer para del ejemplo anterior, los cuadrados de índices respectivos 3 y 1 que contienen xy y ¬xy, son adyacentes puesto que solo difieren en la variable x, ¬x. </p>
 
 					<div class="card mt-3">
 						<div class="card-header">
 							<p class="font-weight-bold texto">Regla</p>
-							<p class="texto">Siempre que en un mapa de Karnaugh, dos cuadrados adyacentes contengan el valor 1, los minterms representados por esos cuadrados pueden combinarse en un producto que contendrá únicamente las variables o literal común a los dos minterms.</p>
+							<p class="texto">Siempre que, en un mapa de Karnaugh, dos cuadrados adyacentes contengan el valor 1, los minterms representados por esos cuadrados pueden combinarse en un producto que contendrá únicamente las variables o literal común a los dos minterms.</p>
 						</div>
 					</div>
 		
@@ -209,7 +209,7 @@
 
 					<p class="texto">Obsérvese que: en el primer ejemplo existe un bloque de 2 cuadrados adyacentes y se elimina 1 variable: x(2 = 2'); en el segundo ejemplo existen dos bloques de un solo cuadrado, y en cada cuadrado no se elimina ninguna variable (1 = 2°); por último, en el tercer ejemplo existen dos bloques, cada uno con 2 variables, eliminándose, en cada uno de ellos, 1 variable: la x y la y (2 = 2).</p>
 
-					<p class="texto">Resumiendo para funciones de dos variables:<br> 
+					<p class="texto">Resumiendo, para funciones de dos variables:<br> 
 					► Un bloque de 1 cuadrado elimina 0 variables : 1 = 2°<br>
 					► Un bloque de 2 cuadrados elimina 1 variable : 2 = 2'<br>
 					► Un bloque de 4 cuadrados elimina 2 variables : 4 = 2²<br>
@@ -255,7 +255,7 @@
 
 					<p class="texto">Como consecuencia de lo anterior, los cuadrados 15, 7, 13 y 5, situados en los cuatro vértices, son adyacentes entre sí, es decir, se podría formar un bloque con esos cuatro cuadrados.</p>
 
-					<p class="texto">Como en este caso podríamos llegar a formar bloques de 8 = 2*2*2 cuadrados, esos significaría que podríamos eliminar, en esta situación, hasta 3 variables de la expresión primitiva.</p>
+					<p class="texto">Como en este caso podríamos llegar a formar bloques de 8 = 2*2*2 cuadrados, eso significaría que podríamos eliminar, en esta situación, hasta 3 variables de la expresión primitiva.</p>
 					
 					<p class="texto">○ Dada la función F: B*B*B*B -> B.</p>
 
@@ -269,7 +269,7 @@
 
 					<p class="texto">Como puede observarse, se ha formado el mínimo número de bloques, cada uno con el máximo de cuadrado y siempre reunidos en potencias de dos.
 					<br>
-					En el bloque más grande de 8 cuadrados el minterm que resulta es el ¬y, puesto que es la única variable que se repite en los cuadrados; en el bloque superior de 2 cuadrados solo permance el minterm ¬xz¬u; en el inferior, también de 2 cuadrados, solo quedará x¬zu. Por tanto, la expresión equivalente a la dada pero simplificada, será: </p>
+					En el bloque más grande de 8 cuadrados el minterm que resulta es el ¬y, puesto que es la única variable que se repite en los cuadrados; en el bloque superior de 2 cuadrados solo permanece el minterm ¬xz¬u; en el inferior, también de 2 cuadrados, solo quedará x¬zu. Por tanto, la expresión equivalente a la dada pero simplificada, será: </p>
 
 					<center>
 						<img class="img-fluid" src="img/efuncion4x4.jpg" alt="">
@@ -334,7 +334,7 @@
 					</div>
 
 					<p class="texto">
-							No vamos a presentar aquí las bases teórivas del procedimiento de Quine-McCluskey. En su lugar, haremos uso de varios ejemplos analizándolos en profundidad, tal como lo hacen la mayoría de textos dedicados a la Matemática Discreta, en general, y al Álgebra de Boole, en particular.
+							No vamos a presentar aquí las bases teóricas del procedimiento de Quine-McCluskey. En su lugar, haremos uso de varios ejemplos analizándolos en profundidad, tal como lo hacen la mayoría de textos dedicados a la Matemática Discreta, en general, y al Álgebra de Boole, en particular.
 							<br><br>
 							Comenzaremos con un ejemplo de función booleana de cuatro variables (*):
 						</p>
@@ -352,16 +352,16 @@
 						<ol class="texto">
 							<li>Se agrupan los minterms de la función dada de acuerdo con el número de variables negadas y del número de orden asignado a cada uno de ellos. Se obtiene así tres grupos: el primero, con los minterms 1, 2, 3; el segundo, con los 4, 5, 6; el tercero, con el 7.</li><br>
 							<li>Se representan cada minterm mediante los bits 0, 1 que le correspondan, es decir, mediante su índice binario. Así, por ejemplo, es <em>x y z ¬u = 1 1 1 0, x ¬y z u = 1 0 1 1</em>, etcétera.</li><br>
-							<li>Se combinan entre sí todos aquellos términos, minterms, originales que difieran únicamente en un bit1, obteniéndose así todos los términos posibles con solo tres variables, es decir, con una variables menos que los originales. Será necesario hacer esa combinación con minterms 1 y 2, pueden combinarse, (1, 4), por tener diferente el segundo bit. El resultado obtenido por esa combinación será:
+							<li>Se combinan entre sí todos aquellos términos, minterms, originales que difieran únicamente en un bit1, obteniéndose así todos los términos posibles con solo tres variables, es decir, con una variable menos que los originales. Será necesario hacer esa combinación con minterms 1 y 2, pueden combinarse, (1, 4), por tener diferente el segundo bit. El resultado obtenido por esa combinación será:
 								
 							<center>
 								<img class="img-fluid" src="img/funcion1quine.jpg" alt="">
 							</center>
 							
-							que es el indicado en la columa correspondiente. Análogamente para las otras combinaciones.
+							que es el indicado en la columna correspondiente. Análogamente para las otras combinaciones.
 							</li><br>
-							<li>A cada término literal obtenido, que ahora únicamente posee tres variables, se le asigna su correspondiente índice binario, escribiendo un guión, -, por cada variable que falte. Por ejemplo, al término x z ¬u le corresponderá el índice binario 1-10. Puede observarse que los cinco primeros términos y sus correspondientes índices poseen todos ellos dos variables afirmadas o dos bits 1, mientras que los restantes, solo contienen una variable afirmada o un solo bit 1 en su índice. En resumen, ahora los términos se reúnen en dos grupos.</li><br>
-							<li>Se combinarán entre sí todos aquellos términos de tres variables que difieran únicamente en un bit 1, con lo que se obtendrán términos con solo dos variables. Esa combinación se hará tomando elementos de los dos grupos diferentes. Por ejemplo, los términos (3, 5), ¬x y u, (6, 7), ¬x ¬y u, pueden combinarse por distinguirse en el segundo bit y pertencen a grupos diferentes, obteniéndose
+							<li>A cada término literal obtenido, que ahora únicamente posee tres variables, se le asigna su correspondiente índice binario, escribiendo un guion, -, por cada variable que falte. Por ejemplo, al término x z ¬u le corresponderá el índice binario 1-10. Puede observarse que los cinco primeros términos y sus correspondientes índices poseen todos ellos dos variables afirmadas o dos bits 1, mientras que los restantes, solo contienen una variable afirmada o un solo bit 1 en su índice. En resumen, ahora los términos se reúnen en dos grupos.</li><br>
+							<li>Se combinarán entre sí todos aquellos términos de tres variables que difieran únicamente en un bit 1, con lo que se obtendrán términos con solo dos variables. Esa combinación se hará tomando elementos de los dos grupos diferentes. Por ejemplo, los términos (3, 5), ¬x y u, (6, 7), ¬x ¬y u, pueden combinarse por distinguirse en el segundo bit y pertenecen a grupos diferentes, obteniéndose
 
 							<center>
 								<img class="img-fluid" src="img/f2quine.jpg" alt="">
@@ -371,7 +371,7 @@
 							<br>
 							Ya no es posible realizar ninguna combinación atrás.
 							</li><br>
-							<li>Para obtener los términos de tres variables, se han combinado todos los elementos de cuatro; oara osbtener los términos con dos variables, se han empleado únicamente los cuatro últimos y no los tres primeros que se habían recuadrado; el elemento ¬x u ua no se ha empleado en combinación alguna y también se ha recuadrado.</li><br>
+							<li>Para obtener los términos de tres variables, se han combinado todos los elementos de cuatro; para obtener los términos con dos variables, se han empleado únicamente los cuatro últimos y no los tres primeros que se habían recuadrado; el elemento ¬x u ya no se ha empleado en combinación alguna y también se ha recuadrado.</li><br>
 							<li>Se constituye ahora una nueva tabla cuyas columnas sean los minterms originales y cuyas filas estén ocupadas por los cuatro elementos sombreados y sobrantes en el apartado anterior. Es una tabla resumen de las combinaciones efectuadas.
 							
 							<center>
@@ -385,9 +385,9 @@
 								<img class="img-fluid" src="img/f3quine.jpg" alt="">
 							</center>
 
-							Para ver si es posible una simplificación adicional, la tabla anterior la completaremos del siguiente modo: en la primer fila, marcaremos todas aquellas columnas en la que figure el término x z ¬u, columnas primera y cuarta, lo que equivale a indicar que es término se obtuvo de la simplificación o combinación de los <em>x y z ¬u</em> y <em>x ¬y z ¬u</em>, es decir 1 con 4. En este caso se dice que el candidato a la forma simplificada, <em>x z ¬u</em>, cubre a los dos minterms originales 1 y 4. Idénticos razonamientos para las restantes filas.
+							Para ver si es posible una simplificación adicional, la tabla anterior la completaremos del siguiente modo: en la primera fila, marcaremos todas aquellas columnas en la que figure el término x z ¬u, columnas primera y cuarta, lo que equivale a indicar que es término se obtuvo de la simplificación o combinación de los <em>x y z ¬u</em> y <em>x ¬y z ¬u</em>, es decir 1 con 4. En este caso se dice que el candidato a la forma simplificada, <em>x z ¬u</em>, cubre a los dos minterms originales 1 y 4. Idénticos razonamientos para las restantes filas.
 							</li><br>
-							<li>Es necesario incluir, al menos, un producto candidato que cubra cada uno de los minterms originales. Por lo tanto, siempre que exista una marca √ en una cierta columa de la tabla anterior, el producto que corresponda a esa fila tiene que figurar en la simplificación. En el caso que nos ocupa razonariamos así:
+							<li>Es necesario incluir, al menos, un producto candidato que cubra cada uno de los minterms originales. Por lo tanto, siempre que exista una marca √ en una cierta columna de la tabla anterior, el producto que corresponda a esa fila tiene que figurar en la simplificación. En el caso que nos ocupa razonariamos así:
 
 							<center>
 								<img width="50%" class="img-fluid mt-3 mb-3" src="img/linesquine.jpg" alt="">
