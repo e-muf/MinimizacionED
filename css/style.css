@@ -141,3 +141,8 @@ footer img {
 	width: 100%;
 	height: auto;
 }
+.negro {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}

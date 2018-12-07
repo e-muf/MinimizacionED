@@ -70,21 +70,21 @@
 		const pregunta13 = new Pregunta('El método que permite n variables y se puede programar es: ', 'Método de Quine-McCluskey', 'Mapa Karnaugh', 'Método Algebraico', 'E.W. Veitch');
 		const pregunta14 = new Pregunta('Si tenemos la siguiente función: xy<br>¿Cuál es el valor de las variables?', '11', '01', '10', '00');
 		const pregunta15 = new Pregunta('¿Cuál es forma canónica de productos de la siguiente tabla?<br><img class="img-pregunta" src="img/tabla1.jpg">', '<img class="img-fluid" src="img/canonica1.jpg">', '<img class="img-fluid" src="img/canonica1-2.jpg">', '<img class="img-fluid" src="img/canonica1-3.jpg">', '<img class="img-fluid" src="img/canonica1-4.jpg">');
-		const pregunta16 = new Pregunta('Seleccione la tabla de verdad de la conjunción', '', '', '', '');
-		const pregunta17 = new Pregunta('', '', '', '', '');
-		const pregunta18 = new Pregunta('', '', '', '', '');
-		const pregunta19 = new Pregunta('', '', '', '', '');
-		const pregunta20 = new Pregunta('', '', '', '', '');
-		const pregunta21 = new Pregunta('', '', '', '', '');
-		const pregunta22 = new Pregunta('', '', '', '', '');
-		const pregunta23 = new Pregunta('', '', '', '', '');
-		const pregunta24 = new Pregunta('', '', '', '', '');
-		const pregunta25 = new Pregunta('', '', '', '', '');
-		const pregunta26 = new Pregunta('', '', '', '', '');
-		const pregunta27 = new Pregunta('', '', '', '', '');
-		const pregunta28 = new Pregunta('', '', '', '', '');
-		const pregunta29 = new Pregunta('', '', '', '', '');
-		const pregunta30 = new Pregunta('', '', '', '', '');
+		const pregunta16 = new Pregunta('Seleccione la tabla de verdad de la conjunción:', '<img src="img/conjuncion.png">', '<img src="img/condicional.png">', '<img src="img/bicondicional.png">', '<img src="img/disyuncion.png">');
+		const pregunta17 = new Pregunta('Seleccione la tabla de verdad de la disyunción:', '<img src="img/disyuncion.png">', '<img src="img/conjuncion.png">', '<img src="img/condicional.png">', '<img src="img/bicondicional.png">');
+		const pregunta18 = new Pregunta('Seleccione la tabla de verdad de la condicional:', '<img src="img/condicional.png">', '<img src="img/conjuncion.png">', '<img src="img/disyuncion.png">', '<img src="img/bicondicional.png">');
+		const pregunta19 = new Pregunta('Seleccione la tabla de verdad de la bicondicional:', '<img src="img/bicondicional.png">', '<img src="img/condicional.png">', '<img src="img/conjuncion.png">', '<img src="img/disyuncion.png">');
+		const pregunta20 = new Pregunta('¿A cuál ley corresponde?<br><p class="bg-light negro">p ^ p <=> p<br>p v p <=> p<p>', 'Idempotencia', 'Identidad', 'Asociativa', 'Conmutativa');
+		const pregunta21 = new Pregunta('¿A cuál ley corresponde?<br><p class="bg-light negro">p ^ (V) <=> p<br>p v (F) <=> p<p>', 'Identidad', 'Idempotencia', 'Asociativa', 'Conmutativa');
+		const pregunta22 = new Pregunta('¿A cuál ley corresponde?<br><p class="bg-light negro">p ^ q <=> q ^ p<br>p v q <=> q v p<p>', 'Conmutativa', 'Identidad', 'Dominación', 'Complemento');
+		const pregunta23 = new Pregunta('¿A cuál ley corresponde?<br><p class="bg-light negro">p ^ ¬p <=> (F)<br>p v ¬p <=> (V)<p>', 'Complemento', 'Doble negación', 'D\' Morgan', 'Asociativa');
+		const pregunta24 = new Pregunta('La forma binaria de la siguiente expresión es...<br> <p class="bg-light negro">PQ¬R + P¬Q¬R + ¬PQ¬R<p>', '110 + 100 + 010', '001 + 011 + 101', '110 + 101 + 010', '001 + 011 + 111');
+		const pregunta25 = new Pregunta('Teniendo la siguiente función ¿Cuál es su representación en Mapa de Karnaugh?<br><center><img src="img/funcionp25.jpg"><center>', '<img class="img-pregunta" src="img/p251.jpg">', '<img class="img-pregunta" src="img/p252.jpg">', '<img class="img-pregunta" src="img/p253.jpg">', '<img class="img-pregunta" src="img/p254.jpg">');
+		const pregunta26 = new Pregunta('¿Cuál corresponde a la ley de doble negación?', '¬(¬P) <=> P', '¬(¬P) <=> ¬P', '¬(P) <=> ¬P', '¬(P) <=> P');
+		const pregunta27 = new Pregunta('¿Cuál corresponde a la ley de D\' Morgan?', '¬(P ^ Q) <=> ¬P v ¬Q', '¬(P ^ Q) <=> P v Q', '¬(P ^ Q) <=> ¬P v Q', '¬(P ^ Q) <=> ¬P ^ ¬Q');
+		const pregunta28 = new Pregunta('Minimizar la siguiente función:<br><center><img src="img/p28.jpg"></center>', '<img src="img/p281.jpg">', '<img src="img/p282.jpg">', '<img src="img/p283.jpg">', '<img src="img/p284.jpg">');
+		const pregunta29 = new Pregunta('Minimizar la siguiente función:<br><center><img src="img/p29.jpg"></center>', '<img src="img/p291.jpg">', '<img src="img/p292.jpg">', '<img src="img/p293.jpg">', '<img src="img/p294.jpg">');
+		const pregunta30 = new Pregunta('Minimizar la siguiente función:<br><center><img src="img/p30.jpg"></center>', '<img src="img/p301.jpg">', '<img src="img/p302.jpg">', '<img src="img/p303.jpg">', '<img src="img/p304.jpg">');
 
 		var t_preguntas = [
 		pregunta1,
